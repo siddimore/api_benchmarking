@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"example.com/benchmark_proj/benchmark" // Import the generated Protobuf package
+	"example.com/benchmark_proj/benchmark" // Import generated Protobuf package
 
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/proto"
@@ -31,7 +31,7 @@ func restHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Invalid request", http.StatusBadRequest)
 		return
 	}
-	data.Value += 1 // Simulate processing
+	data.Value += 1 // Arbitarty Val
 	w.Header().Set("Content-Type", "application/json")
 	_ = json.NewEncoder(w).Encode(data)
 }
@@ -42,7 +42,7 @@ type rpcService struct {
 }
 
 func (s *rpcService) SendData(ctx context.Context, req *benchmark.Data) (*benchmark.Data, error) {
-	req.Value += 1 // Simulate processing
+	req.Value += 1 // Arbitarty processing
 	return req, nil
 }
 
