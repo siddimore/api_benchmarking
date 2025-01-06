@@ -19,9 +19,9 @@ RPC API Average Time per Call: 123.229µs
 # Concurrency
 concurrency := 10  
 # Benchmarking gRPC API with Concurrency...
-gRPC API - Total Time: 22.737972ms  
+gRPC API - Total Time for 100 iterations: 22.737972ms  
 gRPC API - Average Time per Call: 227.379µs  
 
 # Benchmarking REST API with Concurrency...
-REST API - Total Time: 31.284413ms  
+REST API - Total Time for 100 iterations: 31.284413ms  
 REST API - Average Time per Call: 312.844µs  
