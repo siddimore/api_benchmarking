@@ -1,5 +1,10 @@
 # api_benchmarking
 
+# Data
+`
+{ID: "123", Name: "Test", Value: 42}
+`
+
 # Measure Payload size...
 JSON Payload Size: 37 bytes  
 Protobuf Payload Size: 13 bytes  
